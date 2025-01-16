@@ -1,0 +1,478 @@
+.clouds{
+    padding: 30px 15px;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+.clouds ul {
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.clouds li {
+    flex: 0 0 50%; 
+    margin-bottom: 20px; 
+    padding: 0 32px;
+}
+
+.clouds img {
+    max-width: 100%;
+    height: auto; 
+}
+
+.home-features{
+    text-align: center;
+    padding: 30px 8px;
+}
+.home-features .features-heading{
+    padding: 40px 0 0;
+}
+.home-features h2{
+    margin: 10px 0;
+    line-height: 28px;
+}
+.home-features h3{
+    margin: 10px 0;
+}
+.home-features img{
+    width: 32px;
+    height: 32px;
+}
+.home-features li{
+    margin: 40px 0;
+}
+.testimonial{
+    position: relative;
+    padding: 40px 0;
+    background-color: #D5FAFC;
+}
+.testimonial::before{
+    position: absolute;
+    left: 10px;
+    top: 32px;
+    content: "";
+    width: 96px;
+    height: 78px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/assets/images/Quote-bg.png);
+}
+.testimonial .testimonial-head{
+    margin: 30px 0;
+}
+.testimonial .testimonial-head h2{
+    font-size: 30px;
+    color: #111827;
+    font-weight: 700;
+}
+.testimonial .testimonial-head h4{
+    font-size: 16px;
+    color: #111827;
+    font-weight: 400;
+}
+.testimonial .content{
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.testimonial .content img{
+    max-width: 112px;
+}
+.testimonial .content .inner-content{
+    display: flex;
+    padding: 16px;
+}
+.testimonial .content .inner-content img{
+    height: 13px;
+    width: 16px;
+    margin-right: 5px;
+}
+.testimonial .content .inner-content h3{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.testimonial .testimonial-foot{
+    margin-left: 30px;
+}
+.testimonial .testimonial-foot h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+    line-height: 28px;
+}
+.testimonial .testimonial-foot h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: #6B7280;
+    line-height: 20px;
+}
+
+.achievements{
+    padding: 48px 20px;
+    background-color: #fff;
+}
+.achievements h2{
+    font-size: 30px;
+    color: #111827;
+    font-weight: 700;
+    line-height: 40px;
+}
+.achievements h4{
+    color: #111827;
+    line-height: 24px;
+}
+.achievements .achievements-head{
+    margin-bottom: 48px;
+}
+.achievements .content li{
+    margin-bottom: 24px;
+}
+.achievements .content img{
+    height: 32px;
+    width: 32px;
+    margin-right: 15px;
+}
+.achievements .content .inner-content{
+    display: flex; 
+    align-items: center;
+}
+.achievements .content .inner-content .text-content{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+.achievements .content .inner-content .text-content h4{
+    font-size: 14px;
+}
+.tools{
+    padding: 40px 20px;
+    background: #fff;
+}
+.tools h2{
+    font-size: 30px;
+    color: #111827;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+.tools h4{
+    color: #111827;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+.tools .content{
+    background-image: url("/assets/images/Vector.png");
+    background-size: cover;
+    background-position: center;
+    padding: 25px;
+    min-height: 270px;
+}
+/* .tools .content li{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+} */
+.tools .content li {
+    display: flex;
+    justify-content: space-around; 
+    margin-bottom: 20px;
+}
+
+.tools .content li:first-child a {
+    margin-right: 15px;
+}
+
+.tools .content a {
+    display: inline-block;
+}
+.tools .content li a img{
+    max-width: 40px;
+}
+.manage-project{
+    padding: 48px 20px 0;
+    background-color: #1DB5BE;
+}
+.manage-project .manage-project-head{
+    margin-bottom: 48px;
+}
+.manage-project h2{
+    font-size: 30px;
+    color: #111827;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+.manage-project h4{
+    color: #111827;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+.manage-project {
+    
+}
+.manage-project  h5{
+    color: #111827;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.manage-project  img{
+    max-width: 135px;
+    margin-right: 12px;
+}
+.manage-project .inner-content img{
+    max-width: 335px;
+}
+
+@media (min-width: 1200px) {
+    .clouds{
+        margin-top: 40px;
+    }
+    .clouds ul{
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+    .clouds li{
+        flex: none;
+        margin: 0;
+       
+    }
+    .clouds img{
+        max-width: 90px;
+    }
+    h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .home-features .features-heading{
+        max-width: 800px;
+        margin: auto;
+    }
+    .home-features ul {
+        display: flex;
+        flex-wrap: wrap;  
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        justify-content: space-between; 
+    }
+    
+   .home-features ul li {
+        flex: 0 0 30%;   
+        margin-bottom: 20px; 
+        text-align: center;
+    }
+    .home-features h3{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .testimonial .testimonial-head{
+        max-width: 488px;
+    }
+    .testimonial .testimonial-head h2{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .testimonial .testimonial-head h4{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .testimonial{
+        padding: 50px;
+    }
+    .testimonial::before{
+        left: 40px;
+        top: 60px;
+    }
+    .achievements{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .achievements h2{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .achievements h4{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .achievements .achievements-head{
+        max-width: 592px;
+    }
+    .achievements .content{
+        max-width: 592px; 
+    }
+    .achievements ul.icon {
+        display: flex;
+        flex-wrap: wrap;   
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        justify-content: space-between;  
+    }
+    
+    .achievements ul.icon li {
+        flex: 0 0 48%; 
+        margin-bottom: 20px;  
+        box-sizing: border-box; 
+    }
+    .tools{
+        display: flex;
+    }
+    .tools .tools-head{
+        max-width: 488px;
+        position: relative;
+        left: 130px;
+    }
+    .tools h2{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .tools .content{
+        max-width: fit-content;
+    }
+    .manage-project .manage-project-head{
+        max-width: 450px;
+    }
+    .manage-project h2{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .manage-project h4{
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .manage-project {
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: space-between; 
+        padding: 0px 112px;
+    }
+    
+    .manage-project-head {
+        flex: 1;  
+        margin-right: 20px;  
+    }
+    
+    .manage-project .inner-content {
+        flex: 1; 
+    }
+    .manage-project .manage-project-head img{
+        max-width: 135px;
+        margin-right:12px;
+        margin-top: 12px;
+    }
+    .manage-project h5{
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 500;
+        margin-top: 48px;
+    }
+
+    .manage-project  .inner-content ul {
+        display: flex;
+        flex-wrap: wrap; 
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        justify-content: space-between;  
+    }
+    
+    .manage-project .inner-content li {
+        flex: 0 0 48%;  
+        margin-bottom: 20px;  
+    }
+    
+    .manage-project  .inner-content li img {
+        max-width: 100%;
+        height: auto;
+        display: block;  
+    }
+    .manage-project .inner-content li {
+        flex: 0 0 48%;  
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;  
+        align-items: flex-end;
+    }
+    .manage-project .manage-project-head{
+        margin-bottom: 0;
+        align-content: center;
+    }
+.grid-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 41px;
+    margin-top: -75px;
+}
+    
+.tool-grid{
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+}
+.tools .content{
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 220px;
+    display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 30px 40px;
+}
+.tools .content img{
+    max-width: 64px;
+    width: 100%;
+}
+.tools .content .content1{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.tools .content .content2{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+}
+@media (max-width: 750px) {
+    .tools .content{
+        display: flex
+;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: 170px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tools .content a img{
+        max-width: 40px;
+    }
+    .tools .content .content1{
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .tools .content .content2{
+        display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+    }
+}

@@ -1,0 +1,137 @@
+.banner{
+    background-image: url("/assets/images/Background.png");
+background-size: cover;
+background-position: center;
+height: 100vh;
+width: 100%;
+}
+.banner .banner-image img{
+    width: 100%;
+    height: 100vh  ;
+}
+.banner .banner-content{
+position: relative;
+top: 140px;
+}
+.banner .banner-content h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+}
+.banner .banner-content h2{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 20px;
+}
+.banner .banner-content ul{
+    display: flex;
+}
+.banner .banner-content ul li button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px ;
+    margin: 5px;
+    background-color: #7C3AED;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.banner .banner-content ul li .btn-with-image{
+    background-color: unset;
+    color: #7C3AED;
+}
+.banner .banner-content ul li .btn-with-image img{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .banner .banner-image img{
+        height: auto  ;
+    }
+    .banner .banner-content{
+        position: relative;
+        top: 140px;
+        }
+    .banner{
+        background-image: url("/assets/images/mob-bg.png");
+background-size: cover;
+background-position: center;
+height: 1146px;
+width: 100%;
+    }
+    .banner .banner-content .phone-mockup{
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .banner .banner-content {
+        display: flex;               
+        justify-content: space-between; 
+        align-items: center;         
+        width: 100%;                 
+        padding: 20px; 
+        top: 60px;               
+    }
+    
+    .banner .text-content {
+        flex: 1;                     
+        max-width: 50%;                
+        padding-right: 20px;         
+    }
+    
+    .banner .phone-mockup {
+        flex: 1;                      
+        max-width: 50%;             
+        display: flex;
+        justify-content: center;     
+    }
+    
+    .banner ul {
+        padding: 0;
+        margin: 20px 0;
+        list-style: none;
+        display: flex;
+    }
+    
+    .banner .inline-item {
+        margin-right: 15px;           
+    }
+    
+    .banner .inline-item:last-child {
+        margin-right: 0;               
+    }
+    
+    .banner button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #7C3AED;    
+        color: #fff;                  
+        font-size: 16px;              
+        cursor: pointer;
+    }
+    
+    .banner .btn-with-image {
+        display: flex;
+        align-items: center;           
+    }
+    
+    .banner .btn-image {
+        width: 20px;                 
+        margin-right: 10px;           
+    }
+    .banner .phone-mockup img{
+        max-width: 45%;
+    }
+    .banner .banner-content h1{
+        font-size: 60px;
+        line-height: 72px;
+    }
+}
